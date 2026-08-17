@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>品牌设计 - 张景然作品集</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="project-page-body colorful-about">
+  <div class="portfolio-page">
+
+    <!-- 顶部导航 -->
+    <header class="top-nav">
+      <div class="top-decoration">
+        <span class="star-shape star-yellow"></span>
+        <span class="star-shape star-blue"></span>
+        <span class="star-shape star-red"></span>
+      </div>
+
+      <nav>
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html" class="active">作品集</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </header>
+
+    <!-- 左侧导航：作品集展开 -->
+    <aside class="side-nav project-side-nav">
+      <div class="avatar-circle horse-icon">
+        <img src="images/about/horse.png" alt="白马图标">
+      </div>
+
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+
+      <div class="side-menu-group">
+        <a href="portfolio.html" class="active">作品集</a>
+
+        <div class="sub-menu">
+          <a href="ui.html">交互设计</a>
+          <a href="immersive.html">文化沉浸体验</a>
+          <a href="package.html">包装设计</a>
+          <a href="brand.html" class="sub-active">品牌设计</a>
+          <a href="more.html">更多创作</a>
+        </div>
+      </div>
+
+      <a href="contact.html">联系</a>
+
+      <div class="stripe-decoration"></div>
+    </aside>
+
+    <!-- 中间项目长图区域 -->
+    <main class="project-main">
+
+      <section class="project-auto-area" id="projectAutoArea">
+        <div class="project-auto-track" id="projectAutoTrack">
+          <img 
+            class="project-long-image" 
+            src="images/projects/brand-long.png" 
+            alt="品牌设计项目展示长图"
+          >
+
+          <img 
+            class="project-long-image" 
+            src="images/projects/brand-long.png" 
+            alt="品牌设计项目展示长图复制"
+            aria-hidden="true"
+          >
+        </div>
+      </section>
+
+      <!-- 悬浮标题 -->
+      <div class="floating-project-title">
+        <span>品牌设计</span>
+        <span>Brand Visual Identity</span>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    const projectAutoArea = document.getElementById("projectAutoArea");
+
+    if (projectAutoArea) {
+      projectAutoArea.addEventListener("click", function () {
+        projectAutoArea.classList.toggle("is-paused");
+      });
+    }
+  </script>
+</body>
+</html>
